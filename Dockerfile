@@ -61,7 +61,7 @@ RUN curl https://rclone.org/install.sh | bash && \
     unzip fclone-v0.4.1-linux-amd64.zip && mv fclone-v0.4.1-linux-amd64/fclone /usr/bin/ && chmod +x /usr/bin/fclone && rm -r fclone-v0.4.1-linux-amd64
 
 #drive downloader
-RUN curl -L https://github.com/jaskaranSM/drivedlgo/releases/download/1.5/drivedlgo_1.5_Linux_x86_64.gz -o drivedl.gz && \
+RUN curl -L https://github.com/jaskaranSM/drivedlgo/releases/download/1.6.1/drivedlgo_1.6.1_Linux_x86_64.gz -o drivedl.gz && \
     7z x drivedl.gz && mv drivedlgo /usr/bin/drivedl && chmod +x /usr/bin/drivedl && rm drivedl.gz
 
 #ngrok
