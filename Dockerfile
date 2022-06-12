@@ -18,6 +18,7 @@ RUN wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz && \
     make altinstall && \
     cd ..
 RUN python3.9 -m pip install bdfr --upgrade
+RUN pip install gdown
 
 # install required packages
 RUN apt-get update && apt-get install -y software-properties-common && \
